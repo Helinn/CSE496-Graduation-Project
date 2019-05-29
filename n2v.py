@@ -114,7 +114,7 @@ class Graph():
 		self.preprocess_transition_probs()
 		walks = self.simulate_walks(100,80)
 		#walks = [str(walk) for walk in walks]
-		model = Word2Vec(walks, size=int(128), window=10, min_count=0, sg=1, workers=3, iter=int(5))
+		model = Word2Vec(walks, size=int(100), window=10, min_count=0, sg=1, workers=3, iter=int(5))
 		#model.wv.save_word2vec_format("test_out".format(outputFileName))
 		#model.save("test_out".format(outputFileName))
 	
